@@ -4,10 +4,5 @@
 
 Realizaré dos códigos de python:
 
-- Temperaturas
-- Virus
-
-## Índice
-
 1. [Temperaturas](https://github.com/rubenamadoc/Proyecto-Python1/blob/main/Temperaturas.md)
 2. [Virus](https://github.com/rubenamadoc/Proyecto-Python1/blob/main/Virus.md)
