@@ -23,6 +23,6 @@ El programa en Python:
 4.- A continuación, creará una tupla con la siguiente información:
 (24-11-2022,10:15,0123,Positivo o negativo)
 
-[Código]()
+[Código](https://github.com/rubenamadoc/Proyecto-Python1/blob/main/virus.py)
 
 [Demostración](Imagenes/Virus.png)
