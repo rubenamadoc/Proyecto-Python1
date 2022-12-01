@@ -12,10 +12,10 @@ print("Resultado:")
 cadenaf="".join(random.choices(cadena,k=50))#Genero una cadena variable de longitud 50 y letras minusculas
 print(cadenaf)#Muestro la cadena creada
 if vcovid in cadenaf:
-    print("Positivo: Sí se encunetran restos de la variante COVID.")
+    print("Positivo: Sí se encuentran restos de la variante COVID.")
     resultado="positivo"
 else:
-    print("Negativo: No se encuentra restos de la variante.")
+    print("Negativo: No se encuentran restos de la variante.")
     resultado="negativo"#Condicional(Cadena vcovid dentro de cadenaf)
 resultados=(time.strftime('%d-%m-%Y'),time.strftime ('%H:%M:%S'),cod,resultado)
 lista=list(resultados)
