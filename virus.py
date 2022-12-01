@@ -9,12 +9,16 @@ print("Fecha:",time.strftime('%d-%m-%Y'))
 print("Hora:",time.strftime ('%H:%M:%S'))
 print("Código del paciente:",cod)
 print("Resultado:")
-for _ in range(50):
-    cadenaf = random.choice(cadena)#Genero la cadena aleatoria.
-    cadenafinal=print(cadenaf,end="")
-    result=cadenafinal.includes(vcovid)#Condicional. Si la cadena de covid está dentro de la cadena generada, el paciente será positivo.
-    if result == True:
-        print("Positivo: Sí se encunetran restos de la variante COVID.")
-    else:
-        print("Negativo: No se encuentra restos de la variante.")
-resultados=(time.strftime('%d-%m-%Y'),time.strftime ('%H:%M:%S'),cod,result)
+cadenaf="".join(random.choices(cadena,k=50))#Genero una cadena variable de longitud 50 y letras minusculas
+print(cadenaf)#Muestro la cadena creada
+if vcovid in cadenaf:
+    print("Positivo: Sí se encunetran restos de la variante COVID.")
+    resultado="positivo"
+else:
+    print("Negativo: No se encuentra restos de la variante.")
+    resultado="negativo"#Condicional(Cadena vcovid dentro de cadenaf)
+resultados=(time.strftime('%d-%m-%Y'),time.strftime ('%H:%M:%S'),cod,resultado)
+lista=list(resultados)
+file = open("virus.txt","a")
+file.write('muestra = %s' % lista + '\n')
+file.close()
