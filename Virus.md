@@ -25,4 +25,4 @@ El programa en Python:
 
 [Código](https://github.com/rubenamadoc/Proyecto-Python1/blob/main/virus.py)
 
-[Demostración](Imagenes/Virus.png)
+[Demostración](Imagenes/virus.png)
